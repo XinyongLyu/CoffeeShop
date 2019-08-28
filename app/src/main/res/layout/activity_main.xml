@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarStyle="insideOverlay"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20px"
+        android:background="@drawable/coffee3"
+        android:id="@+id/back">
+
+        <TextView
+            android:id="@+id/HeaderTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Arya's Coffee Shop"
+            android:typeface="sans"
+            android:textStyle="bold"
+            android:layout_marginTop="100px"
+            android:textAllCaps="false"
+            android:textSize="40dp"
+            android:textColor="#000000"
+            android:textAlignment="center"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Work: 8:00am to 11:00pm"
+            android:layout_marginTop="60sp"          android:gravity="center"
+            android:textColor="#000000"
+            android:textAllCaps="true"
+            android:textSize="20sp"
+            android:visibility="visible"
+            app:fontFamily="monospace" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Monday to Saturday"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:layout_marginTop="70sp"
+            android:textAllCaps="true"
+            android:textSize="20sp"
+            android:visibility="visible"
+            app:fontFamily="monospace" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="262dp"
+            android:layout_marginLeft="10px"
+            android:layout_marginTop="40sp"
+            android:layout_marginRight="10px"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Arya's Coffee Shop is your best go-to neighborhood joint, any time, any day. Join us for specialty coffee to pep you up in the morning, organic smoothies, juices, and food to fuel your day, and craft beer, wine, and cocktails to get your night started!"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:layout_marginTop="20sp"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:visibility="visible"
+            android:typeface="sans"/>
+
+        <!--Image Slides View-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="500px"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="150px"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:orientation="vertical"
+                    android:clickable="true">
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20sp"
+                    android:layout_marginLeft="10px"
+                    android:layout_marginRight="10px"
+                    android:src="@drawable/coffee1"
+                    />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/OurLocationTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:text="Find us in the address below"
+            android:textColor="#000000"
+            android:textAllCaps="true"
+            android:textSize="20sp"
+            android:visibility="visible"
+            android:typeface="sans" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="227 Ada Ave.#B, Mountain View, CA 94043"
+            android:onClick="onClick"
+            android:textColor="#000000"
+            android:textAllCaps="false"
+            android:layout_marginTop="20sp"
+            android:textSize="20sp"
+            android:visibility="visible"
+            android:typeface="sans" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:text="Contact us with any questions"
+            android:textColor="#000000"
+            android:textAllCaps="true"
+            android:textSize="20sp"
+            android:visibility="visible"
+            android:typeface="sans"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="35sp"
+                        android:layout_height="35sp"
+                        android:adjustViewBounds="true"
+                        android:layout_marginLeft="20px"
+                        android:layout_marginTop="20sp"
+                        android:src="@drawable/email"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20sp"
+                        android:layout_marginLeft="30px"
+                        android:text="xinyong.lyu@west.cmu.edu"
+                        android:textAllCaps="false"
+                        android:textSize="20sp"
+                        android:visibility="visible"
+                        android:textColor="#000000" />
+                </LinearLayout>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="30sp"
+                        android:layout_height="30sp"
+                        android:adjustViewBounds="true"
+                        android:layout_marginLeft="25px"
+                        android:layout_marginTop="20sp"
+                        android:src="@drawable/phone"/>
+                    <TextView
+                        android:id="@+id/BusPhoneTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20sp"
+                        android:layout_marginLeft="30px"
+                        android:text="+1 (650)6959039"
+                        android:textAllCaps="false"
+                        android:textSize="20sp"
+                        android:visibility="visible"
+                        android:textColor="#000000"/>
+                </LinearLayout>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="30sp"
+                        android:layout_height="30sp"
+                        android:adjustViewBounds="true"
+                        android:layout_marginLeft="25px"
+                        android:layout_marginTop="20sp"
+                        android:src="@drawable/website"/>
+                    <TextView
+                        android:id="@+id/BusWebsiteTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20sp"
+                        android:layout_marginLeft="30px"
+                        android:text="www.AryaCoffeeShop.com"
+                        android:textAllCaps="false"
+                        android:textSize="20sp"
+                        android:visibility="visible"
+                        android:gravity="center"
+                        android:textColor="#000000"/>
+                </LinearLayout>
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
